@@ -1,5 +1,5 @@
 <?php
-include('../settings/connection.php');
+include('connection.php');
 
 // Write a SELECT query on the "candidates" table
 $select_query = "SELECT * FROM candidates";
