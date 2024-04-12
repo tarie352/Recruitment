@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Job</title>
-    <link rel="stylesheet" href="../css/jobAddition.css">
+    <link rel="stylesheet" href="jobAddition.css">
 </head>
 
 <body>
     <div class="container">
         <h2>Edit Job</h2>
         <div class="edit-job">
-            <form action="../actions/edit_job_action.php" method="post">
+            <form action="edit_job_action.php" method="post">
                 <input type="hidden" name="jobID" value="<?php echo $row['jobID']; ?>">
                 <label for="title">Title:</label>
                 <input type="text" id="title" name="title" value="<?php echo $row['title']; ?>">
