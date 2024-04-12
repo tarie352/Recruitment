@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Job Addition Page</title>
-  <link rel="stylesheet" href="../css/register.css" />
+  <link rel="stylesheet" href="register.css" />
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 
   <div class="container">
     <div class="registration-form">
-      <form action="../actions/addition.php" method="POST">
+      <form action="addition.php" method="POST">
         <label for="jobID">Job ID:</label><br />
         <input type="text" id="jobID" name="jobID" /><br /><br />
 
@@ -39,7 +39,7 @@
 
         <label for="departmentID">Department:</label><br />
         <select id="departmentID" name="departmentID">
-          <?php include('../functions/department_func.php'); ?>
+          <?php include('department_func.php'); ?>
         </select><br /><br />
 
         <label for="status">Status:</label><br />
@@ -53,9 +53,9 @@
         <input type="date" id="applicationDeadline" name="applicationDeadline" min="<?php echo date('Y-m-d'); ?>" /><br /><br />
 
         <button type="submit" name="addJob" id="addJob">Add Job</button>
-        <button type="button" onclick="window.location.href = '../view/main.php';" style="margin-top:30px;margin-left:30px; height:30px; background-color:#007bff;color:white">Main Page</button>
-        <button type="button" onclick="window.location.href = '../view/jobsPage.php';" style="height:30px; background-color:#007bff;color:white">Jobs Information Page</button>
-        <button type="button" onclick="window.location.href = '../actions/logout.php';" style="height:30px; background-color:#007bff;color:white">Log Out</button>
+        <button type="button" onclick="window.location.href = 'main.php';" style="margin-top:30px;margin-left:30px; height:30px; background-color:#007bff;color:white">Main Page</button>
+        <button type="button" onclick="window.location.href = 'jobsPage.php';" style="height:30px; background-color:#007bff;color:white">Jobs Information Page</button>
+        <button type="button" onclick="window.location.href = 'logout.php';" style="height:30px; background-color:#007bff;color:white">Log Out</button>
 
       </form>
     </div>
