@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 if (isset($_POST['addDept'])) {
     $departmentID = $_POST['deptID'];
@@ -17,7 +17,7 @@ if (isset($_POST['addDept'])) {
 
     if ($result_check->num_rows > 0) {
         // Department already exists, display an error message
-        echo "<script>alert('Department already exists!'); window.location='../view/jobAddition.php';</script>";
+        echo "<script>alert('Department already exists!'); window.location='jobAddition.php';</script>";
         exit();
     } else {
         // Department doesn't exist, proceed with the insertion
@@ -27,7 +27,7 @@ if (isset($_POST['addDept'])) {
 
         // Execute the statement
         if ($stmt->execute()) {
-            echo "<script>alert('New Department addition successful!'); window.location='../view/departmentPages.php';</script>";
+            echo "<script>alert('New Department addition successful!'); window.location='departmentPages.php';</script>";
             exit();
         } else {
             // If an error occurs, let's output the error message
