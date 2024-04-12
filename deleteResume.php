@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 if (isset($_POST['delete'])) {
     // Get the resume ID to delete
@@ -31,7 +31,7 @@ if (isset($_POST['delete'])) {
                 // echo "<script>alert('Resume deleted successfully.'); window.location='../view/resumePage.php';</script>";
             }
             echo "Resume deleted successfully.";
-            header("Location: ../view/resumePage.php");
+            header("Location: resumePage.php");
         } else {
             echo "Error deleting resume from the database.";
         }
