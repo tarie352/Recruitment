@@ -1,5 +1,5 @@
 <?php
-include('../settings/connection.php');
+include('connection.php');
 
 
 // Check if the job_ID parameter is set in the URL
@@ -14,7 +14,7 @@ if (isset($_GET['interview_ID'])) {
     // Execute the delete query
     if (mysqli_query($con, $delete_query)) {
         // Redirect to the job listings page after successful deletion
-        header("Location: ../view/interviewsPage.php");
+        header("Location: interviewsPage.php");
         exit();
     } else {
         // If deletion fails, display an error message
