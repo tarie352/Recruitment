@@ -1,5 +1,5 @@
 <?php
-require_once("../settings/connection.php");
+require_once("connection.php");
 
 $job_ID = $_GET['jobID'];
 $query = "SELECT * FROM postings WHERE jobID = ?";
