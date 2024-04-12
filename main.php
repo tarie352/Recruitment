@@ -4,7 +4,7 @@ session_start();
 
 // Check if the user is not logged in, redirect to login page
 if (!isset($_SESSION['email'])) {
-  header("Location: ../view/login.php");
+  header("Location: login.php");
   exit();
 }
 ?>
@@ -19,7 +19,7 @@ if (!isset($_SESSION['email'])) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recruitment Portal</title>
-  <link rel="stylesheet" href="../css/posting.css" />
+  <link rel="stylesheet" href="posting.css" />
 </head>
 
 <body>
@@ -28,30 +28,30 @@ if (!isset($_SESSION['email'])) {
       <a href="#" class="header-info">
         <h2 class="heading">RECRUITMENT REVOLUTION: Main Page</h2>
       </a>
-      <a href="../actions/logout.php" class="header-link">Logout</a>
-      <a href="../view/landingPage.php" class="header-link">Landing Page</a>
+      <a href="logout.php" class="header-link">Logout</a>
+      <a href="landingPage.php" class="header-link">Landing Page</a>
     </div>
   </header>
 
   <main>
     <div class="button-container">
-      <a href="../view/jobs.php">
+      <a href="jobs.php">
         <button class="landing" style="
-              background-image: url('../images/pexels-vlada-karpovich-4050319.jpg');
+              background-image: url('pexels-vlada-karpovich-4050319.jpg');
             ">
           <h2 style="font-size:45px;">JOBS</h2>
         </button>
       </a>
-      <a href="../view/candidatesInfo.php">
+      <a href="candidatesInfo.php">
         <button class="landing" style="
-              background-image: url('../images/pexels-resume-genius-18848929.jpg');
+              background-image: url('pexels-resume-genius-18848929.jpg');
             ">
           <h2 style="font-size:45px;">CANDIDATES</h2>
         </button>
       </a>
-      <a href="../view/interviewsInfo.php">
+      <a href="interviewsInfo.php">
         <button class="landing" style="
-              background-image: url('../images/pexels-mart-production-7255432.jpg');
+              background-image: url('pexels-mart-production-7255432.jpg');
             ">
           <h2 style="font-size:45px;">INTERVIEWS</h2>
           <!-- <p class="description">
@@ -60,9 +60,9 @@ if (!isset($_SESSION['email'])) {
           </p> -->
         </button>
       </a>
-      <a href="../view/resumesInfo.php">
+      <a href="resumesInfo.php">
         <button class="landing" style="
-              background-image: url('../images/pexels-cottonbro-studio-5989943.jpg');
+              background-image: url('pexels-cottonbro-studio-5989943.jpg');
             ">
           <h2 style="font-size:45px;">RESUMES</h2>
           <!-- <p class="description">
@@ -72,9 +72,9 @@ if (!isset($_SESSION['email'])) {
           </p> -->
         </button>
       </a>
-      <a href="../view/departmentsInfo.php">
+      <a href="departmentsInfo.php">
         <button class="landing" style="
-              background-image: url('../images/pexels-fauxels-3184423.jpg');
+              background-image: url('pexels-fauxels-3184423.jpg');
             ">
           <h2 style="font-size:45px;">DEPARTMENTS</h2>
           <!-- <p class="description">
