@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 
 // Check if the form was submitted
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the statement
     if ($stmt->execute()) {
-        header("Location: ../view/login.php");
+        header("Location: login.php");
         exit();
     } else {
         // If an error occurs, let's output the error message
