@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="../css/landingPage.css">
+    <link rel="stylesheet" href="landingPage.css">
 </head>
 <body>
     <header>
@@ -18,20 +18,20 @@
 
     <main>
         <div class="button-container">
-            <a href="../view/register.php">
-                <button class="landing" style="background-image: url('../images/pexels-pixabay-416405.jpg');">
+            <a href="register.php">
+                <button class="landing" style="background-image: url('pexels-pixabay-416405.jpg');">
                     <h2>Sign Up</h2>
                     <p class="description">Level up your training game with our platform - making your journey ten times easier!</p>
                 </button>
             </a>
-            <a href="../view/login.php">
-                <button class="landing" style="background-image: url('../images/pexels-karolina-grabowska-4476376.jpg');">
+            <a href="login.php">
+                <button class="landing" style="background-image: url('pexels-karolina-grabowska-4476376.jpg');">
                     <h2>Sign In</h2>
                     <p class="description">Unlock the power of seamless hiring! Login now to keep building your dream team.</p>
                 </button>
             </a>
             <a href="https://forms.office.com/r/V3wbRwEFp4?origin=lprLink">
-                <button class="landing" style="background-image: url('../images/pexels-mart-production-7255432.jpg');">
+                <button class="landing" style="background-image: url('pexels-mart-production-7255432.jpg');">
                     <h2>Contact Us</h2>
                     <p class="description">Connect with us anytime, we're here to make magic happen!</p>
                 </button>
