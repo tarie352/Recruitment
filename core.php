@@ -9,7 +9,7 @@ function checkLogin()
 {
     if (!isset($_SESSION['email'])) {
         // Redirect unauthorized users to the login page
-        header("Location: ../login/login_view.php");
+        header("Location: login.php");
         exit();
     }
 }
@@ -19,7 +19,7 @@ function validateEmail($email)
 {
     if (!isset($_SESSION['email']) || $_SESSION['email'] !== $email) {
         // Redirect unauthorized users to the login page
-        header("Location: ../login/login_view.php");
+        header("Location: login.php");
         exit();
     }
 }
