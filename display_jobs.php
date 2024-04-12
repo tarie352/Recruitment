@@ -1,5 +1,5 @@
 <?php
-include('../settings/connection.php');
+include('connection.php');
 
 function displayJobListingsTable($con)
 {
@@ -41,10 +41,10 @@ function displayJobListingsTable($con)
             echo "<td>" . $row['jobStatus'] . "</td>";
             echo "<td>" . $row['applicationDeadline'] . "</td>";
             echo "<td>";
-            echo "<button onclick=\"window.location.href='../view/modify_job.php?jobID=" . $row["jobID"] . "'\">Edit</button>";
+            echo "<button onclick=\"window.location.href='modify_job.php?jobID=" . $row["jobID"] . "'\">Edit</button>";
             echo "</td>";
             echo "<td>";
-            echo "<a href='../actions/delete_job_action.php?jobID=" . $row["jobID"] . "'><i class='bx bxs-trash-alt'></i>Delete</a></td>";
+            echo "<a href='delete_job_action.php?jobID=" . $row["jobID"] . "'><i class='bx bxs-trash-alt'></i>Delete</a></td>";
 
             echo "</td>";
             echo "</tr>";
