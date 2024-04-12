@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 if (isset($_POST['addInterview'])) {
     $interviewID = $_POST['interviewID'];
@@ -22,7 +22,7 @@ if (isset($_POST['addInterview'])) {
 
     // Execute the statement
     if ($stmt->execute()) {
-        echo "<script>alert('Interview addition successful!'); window.location='../view/interviewsPage.php';</script>";
+        echo "<script>alert('Interview addition successful!'); window.location='interviewsPage.php';</script>";
 
         exit();
     } else {
