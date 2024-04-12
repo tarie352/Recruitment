@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 session_start();
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 
 // Check if the form was submitted
@@ -31,7 +31,7 @@ if (isset($_POST['update_button'])) {
         // Execute the statement
         if ($stmt->execute()) {
             // Redirect to the job listings page after successful update
-            header("Location: ../view/jobsPage.php");
+            header("Location: jobsPage.php");
             exit();
         } else {
             // If execution fails, display an error message
