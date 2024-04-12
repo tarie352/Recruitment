@@ -1,5 +1,5 @@
 <?php
-include('../settings/connection.php');
+include('connection.php');
 
 
 if (isset($_POST['update_interview'])) {
@@ -22,7 +22,7 @@ if (isset($_POST['update_interview'])) {
     $stmt->bind_param("siissi", $candidateName, $jobID, $interviewDate, $interviewEmail, $interviewStatus, $interviewID);
 
     if ($stmt->execute()) {
-        header("Location: ../view/interviewsInfo.php");
+        header("Location: interviewsInfo.php");
         exit();
     } else {
         echo "Error updating record: " . $stmt->error;
