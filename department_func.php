@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 $query = "SELECT departmentID, departmentName FROM department";
 
