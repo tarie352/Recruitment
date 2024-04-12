@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/register.css" />
+    <link rel="stylesheet" href="register.css" />
     <title>Modify Job</title>
 </head>
 
 <body>
 
     <h1>Modify Job</h1>
-    <?php include('../actions/jobInfo.php')
+    <?php include('jobInfo.php')
     ?>
-    <form action="../actions/edit_job_action.php" method="post">
+    <form action="edit_job_action.php" method="post">
         <input type="hidden" name="jobID" value="<?= $job['jobID'] ?>">
         <label for="title" style="color: white">Title:</label>
         <input type="text" id="title" name="title" value="<?= $job['title'] ?>"><br><br>
@@ -36,7 +36,7 @@
 
         <label for="departmentID" style="color: white">Department:</label><br />
         <select id="departmentID" name="departmentID">
-            <?php include('../functions/department_func.php'); ?>
+            <?php include('department_func.php'); ?>
         </select><br /><br />
 
         <label for="status" style="color: white">Status:</label><br />
@@ -53,9 +53,9 @@
     </form>
 
     <div class="button-container">
-        <button type="button" onclick="window.location.href = '../view/main.php';" style="margin-top:30px;margin-left:400px">Main Page</button>
-        <button type="button" onclick="window.location.href = '../view/jobsPage.php';">Jobs Information Page</button>
-        <button type="button" onclick="window.location.href = '../actions/logout.php';" style="height:30px; background-color:#007bff;color:white">Log Out</button>
+        <button type="button" onclick="window.location.href = 'main.php';" style="margin-top:30px;margin-left:400px">Main Page</button>
+        <button type="button" onclick="window.location.href = 'jobsPage.php';">Jobs Information Page</button>
+        <button type="button" onclick="window.location.href = 'logout.php';" style="height:30px; background-color:#007bff;color:white">Log Out</button>
     </div>
 
 </body>
