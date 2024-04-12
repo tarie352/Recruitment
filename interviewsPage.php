@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interviews Page</title>
-    <link rel="stylesheet" href="../css/jobsPage.css" />
+    <link rel="stylesheet" href="jobsPage.css" />
 </head>
 
 <body>
     <h1>RECRUITMENT REVOLUTION: Interviews</h1>
 
-    <button onclick="window.location.href = '../view/main.php';">Main Page</button>
+    <button onclick="window.location.href = 'main.php';">Main Page</button>
 
     <!-- Button to logout -->
     <form action="logout.php" method="post">
@@ -22,7 +22,7 @@
         <div class="interview-listings">
             <?php
             // Include the function to display interview listings table
-            include('../functions/interviews_fuxn.php');
+            include('interviews_fuxn.php');
 
             // Call the function to display interview listings table
             displayInterviewsTable($con);
@@ -33,9 +33,9 @@
     </main>
 
     <div class="button-container">
-        <button type="button" onclick="window.location.href = '../view/main.php';" style="margin-top:30px;margin-left:400px">Main Page</button>
-        <button type="button" onclick="window.location.href = '../view/interviewsInfo.php';">Interviews Information Page</button>
-        <button type="button" onclick="window.location.href = '../actions/logout.php';" style="height:30px; background-color:#007bff;color:white">Log Out</button>
+        <button type="button" onclick="window.location.href = 'main.php';" style="margin-top:30px;margin-left:400px">Main Page</button>
+        <button type="button" onclick="window.location.href = 'interviewsInfo.php';">Interviews Information Page</button>
+        <button type="button" onclick="window.location.href = 'logout.php';" style="height:30px; background-color:#007bff;color:white">Log Out</button>
     </div>
 </body>
 
