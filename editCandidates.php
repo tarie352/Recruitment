@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 session_start();
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 // Check if the form was submitted
 if (isset($_POST['candidate_update'])) {
@@ -23,7 +23,7 @@ if (isset($_POST['candidate_update'])) {
 
     // Execute the prepared statement
     if ($stmt->execute()) {
-        echo "<script>alert('Candidate Editing successful!'); window.location='../view/candidatesPage.php';</script>";
+        echo "<script>alert('Candidate Editing successful!'); window.location='candidatesPage.php';</script>";
         exit();
     } else {
         // Display an error message
