@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recruitment Portal</title>
-    <link rel="stylesheet" href="../css/posting.css" />
+    <link rel="stylesheet" href="posting.css" />
 </head>
 
 <body>
@@ -14,24 +14,24 @@
             <a href="#" class="header-info">
                 <h2 class="heading">RECRUITMENT REVOLUTION: Departments Page</h2>
             </a>
-            <a href="../actions/logout.php" class="header-link">Logout</a>
+            <a href="logout.php" class="header-link">Logout</a>
         </div>
     </header>
 
     <main>
         <div class="button-container">
-            <a href="../view/department.php">
+            <a href="department.php">
                 <button class="landing" style="
-              background-image: url('../images/pexels-vlada-karpovich-4050319.jpg');
+              background-image: url('pexels-vlada-karpovich-4050319.jpg');
             ">
                     <h2>Create A New Departments</h2>
                     <p class="description">
                     </p>
                 </button>
             </a>
-            <a href="../view/departmentPages.php">
+            <a href="departmentPages.php">
                 <button class="landing" style="
-              background-image: url('../images/pexels-alexander-suhorucov-6457522.jpg');
+              background-image: url('pexels-alexander-suhorucov-6457522.jpg');
             ">
                     <h2>Available Departments</h2>
                     <p class="description">
