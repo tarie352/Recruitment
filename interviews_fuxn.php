@@ -1,5 +1,5 @@
 <?php
-include('../settings/connection.php');
+include('connection.php');
 
 function displayInterviewsTable($con)
 {
@@ -29,9 +29,9 @@ function displayInterviewsTable($con)
             echo "<td>" . $row['interviewer'] . "</td>";
             echo "<td>" . $row['interviewStatus'] . "</td>";
             echo "<td>";
-            echo "<a href='../view/modify_interviews.php?interview_ID=" . $row["interviewID"] . "'><i class='bx bxs-edit'></i>Edit</a>";
+            echo "<a href='modify_interviews.php?interview_ID=" . $row["interviewID"] . "'><i class='bx bxs-edit'></i>Edit</a>";
             echo " | ";
-            echo "<a href='../actions/delete_interview_action.php?interview_ID=" . $row["interviewID"] . "'><i class='bx bxs-trash'></i>Delete</a>";
+            echo "<a href='delete_interview_action.php?interview_ID=" . $row["interviewID"] . "'><i class='bx bxs-trash'></i>Delete</a>";
             echo "</td>";
             echo "</tr>";
         }
