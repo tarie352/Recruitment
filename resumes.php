@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resumes Page</title>
-  <link rel="stylesheet" href="../css/register.css" />
+  <link rel="stylesheet" href="register.css" />
 </head>
 
 <body>
   <h1>Recruitment Revolution: Resume Uploads</h1>
 
   <div class="registration-form">
-    <form action="../actions/resumeAddition.php" method="POST" enctype="multipart/form-data">
+    <form action="resumeAddition.php" method="POST" enctype="multipart/form-data">
       <div class="form-input py-2">
         <div class="form-group">
           <input type="text" class="form-control" name="name" placeholder="Enter Resume name" required>
@@ -21,7 +21,7 @@
         <div class="form-group">
           <label for="candidateName">Candidate Name:</label><br />
           <select id="candidateID" name="candidateID">
-            <?php include('../functions/candidateNames_fuxn.php'); ?>
+            <?php include('candidateNames_fuxn.php'); ?>
           </select><br /><br />
         </div>
         <div class="form-group">
