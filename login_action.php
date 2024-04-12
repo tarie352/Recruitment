@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 session_start();
 
 // Include database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 if (isset($_POST['login_v'])) {
     $email = mysqli_real_escape_string($con, $_POST['email']);
@@ -25,16 +25,16 @@ if (isset($_POST['login_v'])) {
                 $_SESSION['email'] = $email;
 
                 // Redirect to home/dashboard page
-                header("Location: ../view/main.php");
+                header("Location: main.php");
                 exit(); // Exit after redirection
             } else {
                 // If password verification fails, redirect back to login page with appropriate message
-                header("Location: ../view/login.php?msg=incorrect");
+                header("Location: login.php?msg=incorrect");
                 exit(); // Exit after redirection
             }
         } else {
             // If no record found, redirect back to login page with appropriate message
-            header("Location: ../view/login.php?msg=notfound");
+            header("Location: login.php?msg=notfound");
             exit(); // Exit after redirection
         }
     }
