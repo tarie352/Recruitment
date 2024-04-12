@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registration Page</title>
-  <link rel="stylesheet" href="../css/register.css" />
+  <link rel="stylesheet" href="register.css" />
 </head>
 
 <body>
   <h1>Recruitment Revolution: Registration Form</h1>
   <div class="registration-form">
-    <form action="../actions/register_action.php" method="POST">
+    <form action="register_action.php" method="POST">
       <label for="firstName">First Name:</label><br />
       <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]{1,255}" required /><br /><br />
 
@@ -60,7 +60,7 @@
     </form>
   </div>
   <div class="button-container">
-    <button type="button" onclick="window.location.href = '../view/landingPage.php';" style="margin-top:30px;margin-left:400px">Landing Page</button>
+    <button type="button" onclick="window.location.href = 'landingPage.php';" style="margin-top:30px;margin-left:400px">Landing Page</button>
 
   </div>
 </body>
