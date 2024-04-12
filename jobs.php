@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recruitment Portal</title>
-    <link rel="stylesheet" href="../css/posting.css" />
+    <link rel="stylesheet" href="posting.css" />
 </head>
 
 <body>
@@ -14,17 +14,17 @@
             <a href="#" class="header-info">
                 <h2 class="heading">RECRUITMENT REVOLUTION: Jobs Page</h2>
             </a>
-            <a href="../actions/logout.php" class="header-link">Logout</a>
-            <a href="../view/main.php" class="header-link">Back to Main Page</a>
+            <a href="logout.php" class="header-link">Logout</a>
+            <a href="main.php" class="header-link">Back to Main Page</a>
 
         </div>
     </header>
 
     <main>
         <div class="button-container">
-            <a href="../view/jobAddition.php">
+            <a href="jobAddition.php">
                 <button class="landing" style="
-              background-image: url('../images/pexels-vlada-karpovich-4050319.jpg');
+              background-image: url('pexels-vlada-karpovich-4050319.jpg');
             ">
                     <h2>Create A New Job Opportunity</h2>
                     <!-- <p class="description">
@@ -33,9 +33,9 @@
                     </p> -->
                 </button>
             </a>
-            <a href="../view/jobsPage.php">
+            <a href="jobsPage.php">
                 <button class="landing" style="
-              background-image: url('../images/pexels-alexander-suhorucov-6457522.jpg');
+              background-image: url('pexels-alexander-suhorucov-6457522.jpg');
             ">
                     <h2>Available Jobs Page</h2>
                     <!-- <p class="description">
