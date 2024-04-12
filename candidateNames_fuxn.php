@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 // Write a SELECT query to retrieve candidate names from the candidates table
 $select_query = "SELECT candidateID, CONCAT(fname, ' ', lname) AS candidateName FROM candidates";
