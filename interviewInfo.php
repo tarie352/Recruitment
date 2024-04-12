@@ -1,5 +1,5 @@
 <?php
-require_once("../settings/connection.php");
+require_once("connection.php");
 
 $interview_ID = $_GET['interviewID'];
 $query = "SELECT * FROM interviews WHERE interviewID = ?";
