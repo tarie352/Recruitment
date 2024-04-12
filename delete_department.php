@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 // Include your database connection file
-include_once "../settings/connection.php";
+include_once "connection.php";
 
 // Check if departmentID is provided
 if (isset($_GET["departmentID"])) {
@@ -13,7 +13,7 @@ if (isset($_GET["departmentID"])) {
     // Execute the delete query
     if (mysqli_query($con, $delete_query)) {
         // Redirect to the job listings page after successful deletion
-        header("Location: ../view/departmentPages.php");
+        header("Location: departmentPages.php");
         exit();
     } else {
         // If deletion fails, display an error message
