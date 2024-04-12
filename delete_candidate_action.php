@@ -1,5 +1,5 @@
 <?php
-include('../settings/connection.php');
+include('connection.php');
 
 // Check if the candidateID parameter is set in the URL
 if (isset($_GET['candidateID'])) {
@@ -12,7 +12,7 @@ if (isset($_GET['candidateID'])) {
     // Execute the delete query
     if (mysqli_query($con, $delete_query)) {
         // Redirect to the candidates page after successful deletion
-        header("Location: ../view/candidatesPage.php");
+        header("Location: candidatesPage.php");
         exit();
     } else {
         // If deletion fails, display an error message
