@@ -1,5 +1,5 @@
 <?php
-include('../settings/connection.php');
+include('connection.php');
 
 function displayResumesTable($con)
 {
@@ -22,7 +22,7 @@ function displayResumesTable($con)
             echo "<td>" . $row['resumeName'] . "</td>";
             echo "<td>";
             echo "<a href='../pdf/{$row['resumeName']}' download>Download</a>";
-            echo "<form action='../actions/deleteResume.php' method='POST'>";
+            echo "<form action='deleteResume.php' method='POST'>";
             echo "<input type='hidden' name='resumeID' value='{$row['resumeID']}'>";
             echo "<button type='submit' name='delete'>Delete</button>";
             echo "</form>";
