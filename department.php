@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Departments Page</title>
-  <link rel="stylesheet" href="../css/department.css" />
+  <link rel="stylesheet" href="department.css" />
 </head>
 
 <body>
@@ -17,7 +17,7 @@
   </header>
 
   <div class="depart">
-    <form action="../actions/department_action.php" method="POST">
+    <form action="department_action.php" method="POST">
       <label for="firstName">Department ID:</label><br />
       <input type="text" id="deptID" name="deptID" /><br /><br />
 
@@ -31,9 +31,9 @@
       <input type="email" id="email" name="email" /><br /><br />
 
       <button type="submit" id="addDep" name="addDept">Add Department</button>
-      <button type="button" onclick="window.location.href = '../view/main.php';" style="margin-top:30px;margin-left:10px; height:30px; background-color:#007bff;color:white;">Main Page</button>
-      <button type="button" onclick="window.location.href = '../view/departmentsInfo.php';" style="margin-top:30px;margin-left:10px;width:190px;height:30px;background-color:#007bff;color:white;">Departments Information</button>
-      <button type="button" onclick="window.location.href = '../actions/logout.php';" style="height:30px; background-color:#007bff;color:white">Log Out</button>
+      <button type="button" onclick="window.location.href = 'main.php';" style="margin-top:30px;margin-left:10px; height:30px; background-color:#007bff;color:white;">Main Page</button>
+      <button type="button" onclick="window.location.href = 'departmentsInfo.php';" style="margin-top:30px;margin-left:10px;width:190px;height:30px;background-color:#007bff;color:white;">Departments Information</button>
+      <button type="button" onclick="window.location.href = 'logout.php';" style="height:30px; background-color:#007bff;color:white">Log Out</button>
       </p>
     </form>
     <br />
