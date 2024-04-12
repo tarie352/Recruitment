@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 session_start();
 
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 // Check if the form was submitted
 if (isset($_POST['update_dept'])) {
@@ -22,7 +22,7 @@ if (isset($_POST['update_dept'])) {
 
     // Execute the prepared statement
     if ($stmt->execute()) {
-        echo "<script>alert('Department information updated successfully!'); window.location='../view/departmentPages.php';</script>";
+        echo "<script>alert('Department information updated successfully!'); window.location='departmentPages.php';</script>";
         exit();
     } else {
         echo "Error updating department: " . $stmt->error;
