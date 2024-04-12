@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/pexels-george-milton-7014337.jpg");
+    /* filter: blur(5px); */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.depart {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 500px;
+}
+
+.depart h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.depart form input[type="text"],
+.depart form input[type="email"],
+.depart form input[type="password"],
+.depart form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 30px;
+}
+
+.depart form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.depart form button:hover {
+    background-color: #0056b3;
+}
+
+.depart p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.depart p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.depart p a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(63, 149, 180);
+    margin-top: 60px;
+    font-size: 45px;
+}
+
+.go-to-postings {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.go-to-postings:hover {
+    background-color: #45a049;
+}
+
+.options {
+    background-color: rgb(81, 126, 182);
+    ;
+}
