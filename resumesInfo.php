@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recruitment Portal</title>
-    <link rel="stylesheet" href="../css/posting.css" />
+    <link rel="stylesheet" href="posting.css" />
 </head>
 
 <body>
@@ -14,15 +14,15 @@
             <a href="#" class="header-info">
                 <h2 class="heading">RECRUITMENT REVOLUTION: Resumes Page</h2>
             </a>
-            <a href="../actions/logout.php" class="header-link">Logout</a>
+            <a href="ogout.php" class="header-link">Logout</a>
         </div>
     </header>
 
     <main>
         <div class="button-container">
-            <a href="../view/resumes.php">
+            <a href="resumes.php">
                 <button class="landing" style="
-              background-image: url('../images/pexels-vlada-karpovich-4050319.jpg');
+              background-image: url('pexels-vlada-karpovich-4050319.jpg');
             ">
                     <h2>Add New Resumes</h2>
                     <p class="description">
@@ -31,9 +31,9 @@
                     </p>
                 </button>
             </a>
-            <a href="../view/resumePage.php">
+            <a href="resumePage.php">
                 <button class="landing" style="
-              background-image: url('../images/pexels-alexander-suhorucov-6457522.jpg');
+              background-image: url('pexels-alexander-suhorucov-6457522.jpg');
             ">
                     <h2>Available Resumes</h2>
                     <p class="description">
