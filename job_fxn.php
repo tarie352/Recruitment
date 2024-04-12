@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 // Write a SELECT query on the "postings" table
 $select_query = "SELECT * FROM postings";
