@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 // Write a SELECT query on the "family_name" table
 $select_query = "SELECT * FROM department";
@@ -32,10 +32,10 @@ if (mysqli_num_rows($results) > 0) {
         echo "<td>" . $row['departmentManager'] . "</td>";
         echo "<td>" . $row['departmentEmail'] . "</td>";
         echo "<td>";
-        echo "<button onclick=\"window.location.href='../view/modify_department.php?job_ID=" . $row["departmentID"] . "'\">Edit</button>";
+        echo "<button onclick=\"window.location.href='modify_department.php?job_ID=" . $row["departmentID"] . "'\">Edit</button>";
         echo "</td>";
         echo "<td>";
-        echo "<a href='../actions/delete_department.php?departmentID=" . $row["departmentID"] . "'><i class='bx bxs-trash-alt'>Delete</i></a></td>";
+        echo "<a href='delete_department.php?departmentID=" . $row["departmentID"] . "'><i class='bx bxs-trash-alt'>Delete</i></a></td>";
         echo "</td>";
         echo "</tr>";
     }
