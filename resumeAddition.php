@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 // Include the database connection file
-include('../settings/connection.php');
+include('connection.php');
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
         $stmt->execute();
 
         if ($stmt->execute()) {
-            header("Location:../view/resumePage.php");
+            header("Location:resumePage.php");
             exit();
         } else {
             echo "Error: " . $stmt->error;
