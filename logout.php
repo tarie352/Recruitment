@@ -9,5 +9,5 @@ session_destroy();
 unset($_SESSION['email']);
 
 // Redirect to login view page
-header("Location: ../login/Login_view.php");
+header("Location: login.php");
 exit();
